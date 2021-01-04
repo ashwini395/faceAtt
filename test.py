@@ -37,9 +37,6 @@ def Attendance(name):
             f.writelines(f'\n{name},{dt}')
 
 
-# encodeKnown = DbEncodings(images)
-print('Encoding Complete')
-
 
 
 cap = cv2.VideoCapture(0)
