@@ -16,6 +16,10 @@ results = cursor.fetchall()
 encodings = [np.asarray(json.loads(encoding[1])) for encoding in results]
 names = [name[0] for name in results]
 
+# names = []
+# for name in results:
+#     names.append(name[0])
+
 
 pathlib = 'UniqueImagesActors'
 
