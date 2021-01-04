@@ -26,3 +26,26 @@ Face Attendance Recognition
 - conda install -c conda-forge face_recognition
 
 - conda install -c anaconda sqlite
+
+# create DB
+
+- sqlite3 attendance.db
+
+#### then create table in attendance.db
+
+- CREATE TABLE ATTENDANCE_SHEET(
+   ROLL_NUM INT PRIMARY KEY NOT NULL,
+   NAME TEXT    NOT NULL,
+   PICTURE IMAGE NOT NULL,
+   FACE_ENCODING BLOB   
+);
+
+
+# Generate encodings
+
+- python generate_encodings.py
+
+# run and test 
+
+
+- python test.py
