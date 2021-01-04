@@ -27,7 +27,7 @@ Face Attendance Recognition
 
 - conda install -c anaconda sqlite
 
-#create DB
+# create DB
 
 - sqlite3 attendance.db
 
